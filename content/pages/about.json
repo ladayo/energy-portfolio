@@ -1,0 +1,27 @@
+{
+  "lead": "I'm interested in how societies keep the lights on and the homes warm while moving to cleaner, fairer energy systems.",
+  "body": "## Hello, I'm [[Your Name]]\n\nI'm a graduate student in the **Master of Sustainability** programme at the **University of Saskatchewan**, specialising in **Energy Security**. I started this site at the beginning of the programme because I learn best when I have to explain things — and because the questions I care about are better answered in conversation than alone.\n\n## Academic background\n\n[[Add your previous degree(s), the institution(s), and your year of graduation — for example: \"BSc in (subject), (University), (Year)\".]]\n\n[[Optionally add one or two sentences on a thesis, capstone project or course that shaped your interest in energy.]]\n\n## Professional background\n\n[[Briefly describe your professional experience in two or three sentences — the sectors you've worked in, the kind of work you did, and what it taught you about energy systems. Only include what you're comfortable sharing publicly.]]\n\n## Why sustainability and energy security?\n\nEnergy sits underneath almost everything — health, livelihoods, education, industry, and the way communities plan for the future. Yet the systems we rely on are being asked to change faster than at any point in living memory. I wanted to understand that change properly: not just the technologies, but the policies, institutions and people that decide whether a transition is secure, affordable and fair.\n\n[[Add a personal sentence or two here about what drew you to this field — a moment, a place or an experience that made these questions feel real to you.]]\n\n## What I hope to do with this\n\n[[Describe your goals after the programme — for example, the kind of role, sector or research you're working towards.]]\n\n## A note on this site\n\nThe views here are my own and reflect my learning as it happens. Some posts will be rough or incomplete, and I'll update them as my thinking changes. Where I draw on other people's work, I try to credit it clearly.\n",
+  "interests": [
+    "Energy security and resilience",
+    "The energy trilemma",
+    "Energy justice and community ownership",
+    "Renewable energy integration",
+    "Energy transition policy in Canada",
+    "SDG 7 and local energy access",
+    "Repurposing oil and gas assets",
+    "Community energy planning"
+  ],
+  "education": [
+    {
+      "title": "Master of Sustainability (Energy Security)",
+      "place": "University of Saskatchewan",
+      "years": "[[Start year]] – present"
+    },
+    {
+      "title": "[[Previous degree]]",
+      "place": "[[Institution]]",
+      "years": "[[Year]]"
+    }
+  ],
+  "cvLink": ""
+}

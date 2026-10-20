@@ -1,0 +1,231 @@
+# Content editor settings (Decap CMS).
+# The ONLY lines you must change are the two marked "CHANGE ME" below.
+
+backend:
+  name: github
+  repo: your-github-username/your-repo-name   # CHANGE ME — e.g. jane-doe/energy-portfolio
+  branch: main
+  # Sign-in is handled by Netlify's GitHub OAuth provider (see the guide).
+
+site_url: https://your-site-name.netlify.app  # CHANGE ME — your live address
+display_url: https://your-site-name.netlify.app
+logo_url: /assets/img/favicon.svg
+locale: en
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  # ------------------------------------------------------------ journal posts
+  - name: posts
+    label: Learning journal
+    label_singular: Journal post
+    description: "Reflections, lessons, assignments, course insights and key takeaways. Tip: tick 'Draft' to save without publishing."
+    folder: content/posts
+    create: true
+    format: json
+    extension: json
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{date}} — {{title}}"
+    sortable_fields: [date, title, type]
+    view_filters:
+      - { label: Drafts, field: draft, pattern: true }
+      - { label: Published, field: draft, pattern: false }
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Publication date, name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: Last updated (optional), name: updated, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false, default: "" }
+      - label: Entry type
+        name: type
+        widget: select
+        options: [Reflection, Lesson, Course insight, Key takeaways, Assignment]
+        default: Reflection
+      - { label: Course (optional), name: course, widget: string, required: false, hint: "e.g. ENVS 801 — Energy Security (check the code)" }
+      - { label: Topics, name: categories, widget: select, multiple: true, min: 1, options: &topic_options [{ label: "Energy security", value: "energy-security" }, { label: "Renewable energy", value: "renewable-energy" }, { label: "Energy transition", value: "energy-transition" }, { label: "Energy justice", value: "energy-justice" }, { label: "Sustainable development", value: "sustainable-development" }, { label: "Community energy planning", value: "community-energy-planning" }, { label: "The energy trilemma", value: "energy-trilemma" }, { label: "SDG 7", value: "sdg-7" }] }
+      - { label: Tags, name: tags, widget: list, required: false, hint: "Short keywords, separated by commas — e.g. Canada, net zero, grids" }
+      - { label: Summary (shown on cards and when shared), name: excerpt, widget: text, hint: "One or two sentences." }
+      - { label: Post body, name: body, widget: markdown, buttons: [bold, italic, link, heading-two, heading-three, quote, bulleted-list, numbered-list], editor_components: [] }
+      - { label: Featured on home page, name: featured, widget: boolean, default: false, required: false }
+      - { label: "Draft (hidden from the website)", name: draft, widget: boolean, default: true, required: false }
+      - { label: Comments open, name: commentsOpen, widget: boolean, default: true, required: false }
+      - label: Approved comments
+        name: comments
+        widget: list
+        required: false
+        summary: "{{fields.name}} — {{fields.date}}"
+        hint: "To APPROVE a comment, copy it here from Netlify → Forms → comments. To REMOVE one, delete it from this list."
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Affiliation or role, name: affiliation, widget: string, required: false }
+          - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+          - { label: Comment, name: text, widget: text }
+
+  # ------------------------------------------------------------ research & projects
+  - name: projects
+    label: Research & projects
+    label_singular: Project
+    folder: content/projects
+    create: true
+    format: json
+    extension: json
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{type}} — {{title}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - label: Type
+        name: type
+        widget: select
+        options: [Research paper, Presentation, Case study, Group project, Sustainability initiative]
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: Status, name: status, widget: select, options: [Idea, Planned, In progress, Draft, Completed], default: In progress }
+      - { label: Course (optional), name: course, widget: string, required: false }
+      - { label: Collaborators (optional — only with their permission), name: collaborators, widget: string, required: false }
+      - { label: Summary, name: summary, widget: text }
+      - { label: Details, name: body, widget: markdown, required: false }
+      - { label: Link to view online (optional), name: link, widget: string, required: false, hint: "Full address starting with https://" }
+      - { label: File to download (PDF, slides…), name: file, widget: file, required: false }
+      - { label: Topics, name: categories, widget: select, multiple: true, required: false, options: *topic_options }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: "Hide from website", name: draft, widget: boolean, default: false, required: false }
+
+  # ------------------------------------------------------------ resources
+  - name: resources
+    label: Resources
+    files:
+      - label: Resource list
+        name: resources
+        file: content/resources.json
+        fields:
+          - { label: Introduction, name: intro, widget: text }
+          - label: Resources
+            name: items
+            widget: list
+            summary: "{{fields.type}} — {{fields.title}}"
+            fields:
+              - { label: Type, name: type, widget: select, options: [Reports, Articles, Books, Tools & data, Links] }
+              - { label: Title, name: title, widget: string }
+              - { label: Author or organisation, name: author, widget: string, required: false }
+              - { label: Year, name: year, widget: string, required: false }
+              - { label: Link, name: url, widget: string, required: false, hint: "Full address starting with https://" }
+              - { label: Why it's useful, name: note, widget: text, required: false }
+              - { label: Topics, name: topics, widget: select, multiple: true, required: false, options: *topic_options }
+
+  # ------------------------------------------------------------ pages & settings
+  - name: pages
+    label: Pages & settings
+    files:
+      - label: Site settings
+        name: settings
+        file: content/settings.json
+        fields:
+          - { label: Site title, name: siteTitle, widget: string }
+          - { label: Your name, name: ownerName, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Programme, name: programme, widget: string }
+          - { label: University, name: university, widget: string }
+          - { label: Live site address, name: siteUrl, widget: string, required: false, hint: "e.g. https://your-site.netlify.app — enables share previews, RSS and sitemap" }
+          - { label: Photo, name: photo, widget: image, required: false }
+          - { label: Photo description (for screen readers), name: photoAlt, widget: string }
+          - { label: Contact email (not shown publicly), name: contactEmail, widget: string, required: false }
+          - label: Social links
+            name: social
+            widget: object
+            hint: "Leave blank to hide. Use full addresses starting with https://"
+            fields:
+              - { label: LinkedIn, name: linkedin, widget: string, required: false }
+              - { label: ORCID, name: orcid, widget: string, required: false }
+              - { label: ResearchGate, name: researchgate, widget: string, required: false }
+              - { label: Google Scholar, name: googleScholar, widget: string, required: false }
+              - { label: GitHub, name: github, widget: string, required: false }
+              - { label: Bluesky, name: bluesky, widget: string, required: false }
+          - label: Comments
+            name: comments
+            widget: object
+            fields:
+              - label: Comment system
+                name: provider
+                widget: select
+                options:
+                  - { label: "Moderated — every comment approved by me first", value: moderated }
+                  - { label: "GitHub sign-in (Giscus) — verified accounts", value: giscus }
+                  - { label: "Off", value: "off" }
+              - label: Giscus details (only for GitHub sign-in)
+                name: giscus
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Repository, name: repo, widget: string, required: false }
+                  - { label: Repository ID, name: repoId, widget: string, required: false }
+                  - { label: Discussion category, name: category, widget: string, required: false }
+                  - { label: Category ID, name: categoryId, widget: string, required: false }
+          - label: Email updates
+            name: subscribe
+            widget: object
+            fields:
+              - label: Provider
+                name: provider
+                widget: select
+                options:
+                  - { label: "Netlify Forms (collect addresses, export to send)", value: netlify }
+                  - { label: "Buttondown (double opt-in, send newsletters)", value: buttondown }
+              - { label: Buttondown username, name: buttondownUsername, widget: string, required: false }
+          - { label: Licence for your writing, name: licence, widget: string }
+          - { label: Posts per page, name: postsPerPage, widget: number, value_type: int, min: 3, max: 30 }
+      - label: Home page
+        name: home
+        file: content/pages/home.json
+        fields:
+          - { label: Small heading above title, name: heroEyebrow, widget: string }
+          - { label: Main heading, name: heroHeading, widget: string }
+          - { label: Welcome text, name: heroIntro, widget: markdown }
+          - { label: Interests heading, name: interestsHeading, widget: string }
+          - { label: Interests, name: interests, widget: list }
+          - { label: Invitation to follow, name: invitation, widget: text }
+      - label: About me
+        name: about
+        file: content/pages/about.json
+        fields:
+          - { label: Opening sentence, name: lead, widget: text }
+          - { label: About text, name: body, widget: markdown }
+          - { label: Areas of interest, name: interests, widget: list }
+          - label: Education
+            name: education
+            widget: list
+            fields:
+              - { label: Qualification, name: title, widget: string }
+              - { label: Institution, name: place, widget: string }
+              - { label: Years, name: years, widget: string }
+          - { label: CV file (optional), name: cvLink, widget: file, required: false }
+      - label: Topics
+        name: topics
+        file: content/topics.json
+        fields:
+          - label: Topics
+            name: topics
+            widget: list
+            hint: "If you add a topic here, also add it to topic_options at the top of admin/config.yml."
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Web address part (lowercase-with-dashes), name: slug, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Icon, name: icon, widget: select, options: [shield, sun, arrow, scales, globe, people, triangle, bolt, leaf] }
+      - label: Community guidelines
+        name: guidelines
+        file: content/pages/guidelines.json
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Text, name: body, widget: markdown }
+      - label: Privacy notice
+        name: privacy
+        file: content/pages/privacy.json
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Text, name: body, widget: markdown }
+      - label: Accessibility statement
+        name: accessibility
+        file: content/pages/accessibility.json
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Text, name: body, widget: markdown }

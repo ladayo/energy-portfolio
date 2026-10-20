@@ -1,0 +1,208 @@
+{
+  "intro": "A growing, curated list of reports, readings, books, tools and links I return to often. Always check the latest edition before citing.",
+  "items": [
+    {
+      "type": "Reports",
+      "title": "World Energy Trilemma Index",
+      "author": "World Energy Council",
+      "year": "Annual",
+      "url": "https://www.worldenergy.org/transition-toolkit/world-energy-trilemma-index",
+      "note": "Country rankings across energy security, equity and environmental sustainability.",
+      "topics": [
+        "energy-trilemma"
+      ]
+    },
+    {
+      "type": "Reports",
+      "title": "World Energy Outlook",
+      "author": "International Energy Agency",
+      "year": "Annual",
+      "url": "https://www.iea.org/topics/world-energy-outlook",
+      "note": "Widely cited global scenarios for energy supply, demand and emissions.",
+      "topics": [
+        "energy-security",
+        "energy-transition"
+      ]
+    },
+    {
+      "type": "Reports",
+      "title": "Tracking SDG 7: The Energy Progress Report",
+      "author": "IEA, IRENA, UN DESA, World Bank and WHO",
+      "year": "Annual",
+      "url": "https://trackingsdg7.esmap.org/",
+      "note": "The official progress report on each SDG 7 target.",
+      "topics": [
+        "sdg-7"
+      ]
+    },
+    {
+      "type": "Reports",
+      "title": "Canada's Energy Future",
+      "author": "Canada Energy Regulator",
+      "year": "Regular series",
+      "url": "https://www.cer-rec.gc.ca/en/data-analysis/canada-energy-future/",
+      "note": "Long-term energy supply and demand projections for Canada.",
+      "topics": [
+        "energy-transition",
+        "energy-security"
+      ]
+    },
+    {
+      "type": "Reports",
+      "title": "Climate Change 2022: Mitigation of Climate Change (AR6 Working Group III)",
+      "author": "IPCC",
+      "year": "2022",
+      "url": "https://www.ipcc.ch/report/ar6/wg3/",
+      "note": "Includes detailed chapters on energy systems and mitigation pathways.",
+      "topics": [
+        "energy-transition",
+        "sustainable-development"
+      ]
+    },
+    {
+      "type": "Articles",
+      "title": "The concept of energy security: Beyond the four As",
+      "author": "Cherp, A. & Jewell, J.",
+      "year": "2014",
+      "url": "https://doi.org/10.1016/j.enpol.2014.09.005",
+      "note": "Energy Policy. A helpful critique of common energy security definitions.",
+      "topics": [
+        "energy-security"
+      ]
+    },
+    {
+      "type": "Articles",
+      "title": "Energy justice: A conceptual review",
+      "author": "Jenkins, K., McCauley, D., Heffron, R., Stephan, H. & Rehner, R.",
+      "year": "2016",
+      "url": "https://doi.org/10.1016/j.erss.2015.10.004",
+      "note": "Energy Research & Social Science. Sets out distributional, procedural and recognition justice.",
+      "topics": [
+        "energy-justice"
+      ]
+    },
+    {
+      "type": "Articles",
+      "title": "Community renewable energy: What should it mean?",
+      "author": "Walker, G. & Devine-Wright, P.",
+      "year": "2008",
+      "url": "https://doi.org/10.1016/j.enpol.2007.10.019",
+      "note": "Energy Policy. A short, influential piece on process and outcome in community energy.",
+      "topics": [
+        "community-energy-planning",
+        "energy-justice"
+      ]
+    },
+    {
+      "type": "Articles",
+      "title": "Energy justice: Conceptual insights and practical applications",
+      "author": "Sovacool, B. K. & Dworkin, M. H.",
+      "year": "2015",
+      "url": "https://doi.org/10.1016/j.apenergy.2015.01.002",
+      "note": "Applied Energy. Connects justice principles to practical energy decisions.",
+      "topics": [
+        "energy-justice"
+      ]
+    },
+    {
+      "type": "Books",
+      "title": "Sustainable Energy — Without the Hot Air",
+      "author": "David J. C. MacKay",
+      "year": "2009",
+      "url": "https://www.withouthotair.com/",
+      "note": "A clear, numbers-first introduction to energy supply and demand. Free to read online.",
+      "topics": [
+        "renewable-energy"
+      ]
+    },
+    {
+      "type": "Books",
+      "title": "Energy and Civilization: A History",
+      "author": "Vaclav Smil",
+      "year": "2017",
+      "url": "",
+      "note": "Long-view history of how energy has shaped societies.",
+      "topics": [
+        "energy-transition"
+      ]
+    },
+    {
+      "type": "Books",
+      "title": "Global Energy Justice: Problems, Principles, and Practices",
+      "author": "Benjamin K. Sovacool & Michael H. Dworkin",
+      "year": "2014",
+      "url": "",
+      "note": "A comprehensive grounding in energy justice principles.",
+      "topics": [
+        "energy-justice"
+      ]
+    },
+    {
+      "type": "Tools & data",
+      "title": "Our World in Data — Energy",
+      "author": "Our World in Data",
+      "year": "Ongoing",
+      "url": "https://ourworldindata.org/energy",
+      "note": "Interactive charts on energy production, consumption and emissions.",
+      "topics": [
+        "energy-transition",
+        "sdg-7"
+      ]
+    },
+    {
+      "type": "Tools & data",
+      "title": "IEA Data and Statistics",
+      "author": "International Energy Agency",
+      "year": "Ongoing",
+      "url": "https://www.iea.org/data-and-statistics",
+      "note": "Global energy data, with some free datasets and charts.",
+      "topics": [
+        "energy-security"
+      ]
+    },
+    {
+      "type": "Tools & data",
+      "title": "Zotero",
+      "author": "Open-source reference manager",
+      "year": "",
+      "url": "https://www.zotero.org/",
+      "note": "Free tool I use to collect, organise and cite readings.",
+      "topics": []
+    },
+    {
+      "type": "Links",
+      "title": "SDG 7 — Department of Economic and Social Affairs",
+      "author": "United Nations",
+      "year": "",
+      "url": "https://sdgs.un.org/goals/goal7",
+      "note": "Official targets, indicators and progress updates for SDG 7.",
+      "topics": [
+        "sdg-7",
+        "sustainable-development"
+      ]
+    },
+    {
+      "type": "Links",
+      "title": "School of Environment and Sustainability",
+      "author": "University of Saskatchewan",
+      "year": "",
+      "url": "https://sens.usask.ca/",
+      "note": "Home of the Master of Sustainability programme.",
+      "topics": [
+        "sustainable-development"
+      ]
+    },
+    {
+      "type": "Links",
+      "title": "Energy sources and distribution",
+      "author": "Natural Resources Canada",
+      "year": "",
+      "url": "https://natural-resources.canada.ca/energy-sources",
+      "note": "Federal information on Canada's energy sources and programmes.",
+      "topics": [
+        "energy-security",
+        "energy-transition"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "topics": [
+    {
+      "slug": "energy-security",
+      "name": "Energy security",
+      "icon": "shield",
+      "description": "Reliable, affordable and resilient energy systems — and what 'secure' means for different people and places."
+    },
+    {
+      "slug": "renewable-energy",
+      "name": "Renewable energy",
+      "icon": "sun",
+      "description": "Wind, solar, hydro, geothermal and storage: the technologies, and the systems they need around them."
+    },
+    {
+      "slug": "energy-transition",
+      "name": "Energy transition",
+      "icon": "arrow",
+      "description": "How energy systems change over time, and how to make that change orderly, fair and lasting."
+    },
+    {
+      "slug": "energy-justice",
+      "name": "Energy justice",
+      "icon": "scales",
+      "description": "Who benefits, who bears the costs, and who gets a say in energy decisions."
+    },
+    {
+      "slug": "sustainable-development",
+      "name": "Sustainable development",
+      "icon": "globe",
+      "description": "Connecting energy to wider social, economic and environmental goals."
+    },
+    {
+      "slug": "community-energy-planning",
+      "name": "Community energy planning",
+      "icon": "people",
+      "description": "Local plans, local ownership and the practical work of shaping energy futures from the ground up."
+    },
+    {
+      "slug": "energy-trilemma",
+      "name": "The energy trilemma",
+      "icon": "triangle",
+      "description": "Balancing security, equity and environmental sustainability — and the trade-offs between them."
+    },
+    {
+      "slug": "sdg-7",
+      "name": "SDG 7",
+      "icon": "bolt",
+      "description": "Affordable, reliable, sustainable and modern energy for all — globally and at home."
+    }
+  ]
+}
