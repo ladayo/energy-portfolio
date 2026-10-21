@@ -1,23 +1,24 @@
 {
-  "title": "Energy security and Canada's energy transition",
-  "date": "2026-09-28",
+  "excerpt": "Energy projects are often framed as technical problems of supply, infrastructure, cost, and risk. That framing is necessary but incomplete because energy systems also organize relationships among institutions, communities, land, water, livelihoods, and future generations.",
+  "draft": false,
+  "body": "In ENVS 839, I have been reflecting on Two-Eyed Seeing, Ethical Space, relational systems thinking, the Four Rs, and research on Indigenous involvement and control in renewable energy. A central lesson for me is that good engineering and ethical engagement are not competing priorities. The deeper challenge is deciding who defines the problem, what knowledge is recognized, how authority is shared, and what success means.\n\nThis has changed how I revisit an electrification proposal discussed in my Assignment 2 for a swamp community near oil & gas operations in Nigeria. The proposal involved moving from diesel generation toward gas, with two 1 MW gas generators procured. Reliability, reduced diesel reliance, safe gas use, and future renewable integration were intended goals and questions. No project outcomes or community responses were established, so I cannot present the technology choice as proof of sustainability.\n\n\n\n## Key takeaways\n\n> Stakeholderengagement should not begin after the problem and preferred solution arealready fixed. Community knowledge and locally legitimate authority should helpshape project purpose, options, governance, risk analysis, knowledge and datarules, and measures of success.\n>\n>\n\n*As I continue developing in energy security and project leadership, I am asking: How can project teams protect schedule and technical rigour while remaining genuinely open to co-learning that may change the project itself?*\n\nThank you, Dr Elaina Guilmette, for guiding this learning.\n\n\\#TwoEyedSeeing #EnergySecurity #Sustainability #CommunityEnergy#IndigenousKnowledge #ProjectLeadership #EnergyJustice #EthicalEngagement",
+  "featured": true,
+  "date": "2026-10-03",
+  "comments": [],
+  "title": "Two-Eyed Seeing (Etuaptmumk): Technical certainty can arrive too early in an energy project.",
+  "tags": [
+    "Project Leadership",
+    "Energy Security",
+    "Community Energy",
+    "Two Eyed Seeing",
+    "Indigenous Knowledge"
+  ],
   "type": "Reflection",
-  "course": "[[Course code and name]]",
+  "course": "ENVS 839 - Ways of Knowing Through the Concept of Sustainability-Energy",
   "categories": [
     "energy-security",
-    "energy-transition"
+    "energy-transition",
+    "community-energy-planning"
   ],
-  "tags": [
-    "Canada",
-    "net zero",
-    "electricity grids",
-    "resilience",
-    "Saskatchewan"
-  ],
-  "excerpt": "For a major energy producer like Canada, energy security isn't only about keeping supply flowing. It's also about economic resilience, reliable grids and a transition that regions and workers can trust.",
-  "featured": true,
-  "draft": false,
-  "commentsOpen": true,
-  "body": "Most of the energy security writing I'd read before this programme came from the perspective of energy *importers*: countries worried about where their oil and gas would come from. Canada sits in a very different position, and that has made me rethink what energy security means.\n\n## A producer's view of security\n\nCanada is one of the world's major producers and exporters of energy, with large oil, natural gas, uranium and hydroelectric resources. For a country like this, energy security has several layers:\n\n- **Supply security at home** — keeping homes heated and the lights on, especially through long, cold winters.\n- **Economic security** — many communities, provincial budgets and jobs depend on energy production.\n- **Security for partners** — the conversation about supplying allies has grown louder since Russia's full-scale invasion of Ukraine in 2022.\n\nOne framing I found helpful from the readings defines energy security as the low vulnerability of vital energy systems. That shifts the question from \"do we have enough?\" to \"what could disrupt the systems we depend on, and how exposed are we?\" [[Add citation — e.g. Cherp & Jewell (2014)]]\n\n## Why the transition changes the picture\n\nCanada has committed in law to reaching net-zero emissions by 2050. Moving towards that goal changes where the vulnerabilities sit:\n\n- **Electricity becomes more central.** As heating and transport electrify, grid reliability becomes a bigger part of energy security.\n- **Provinces start from very different places.** Some generate most of their power from hydro; others, including Saskatchewan, have relied heavily on coal and natural gas. One national target means very different journeys.\n- **Extreme weather tests the system.** Cold snaps, heat waves and wildfires put pressure on both supply and infrastructure.\n- **New dependencies appear.** Critical minerals, supply chains for equipment and skilled workers become part of the security conversation.\n\n## What I'm taking from this\n\nI used to think of the transition and energy security as being in tension. I now think the more useful question is *how* a transition is managed. A rushed or poorly coordinated transition can create insecurity. A well-planned one — with stronger interties between provinces, storage, diverse supply and support for affected workers — can make the system more resilient than it is today.\n\n## Key takeaways\n\n> - Energy security for a producer country includes economic and regional security, not just supply.\n> - The transition shifts vulnerabilities rather than simply adding or removing them.\n> - Trust matters: regions and workers need to see a credible place for themselves in the future system.\n\n## Still thinking about\n\nHow should provinces with very different energy mixes share the costs and benefits of a national transition? [[Add your own reflection or a local example from your coursework.]]\n",
-  "comments": []
+  "commentsOpen": true
 }
