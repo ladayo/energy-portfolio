@@ -1,13 +1,9 @@
 {
-  "siteTitle": "Energy Security Learning Portfolio",
-  "ownerName": "[[Your Name]]",
-  "tagline": "A learning journal on sustainability, energy security and fair energy transitions",
-  "programme": "Master of Sustainability — Energy Security",
-  "university": "University of Saskatchewan",
   "siteUrl": "",
-  "photo": "",
-  "photoAlt": "Professional photograph of [[Your Name]]",
-  "contactEmail": "",
+  "subscribe": {
+    "provider": "netlify",
+    "buttondownUsername": ""
+  },
   "social": {
     "linkedin": "",
     "orcid": "",
@@ -16,6 +12,11 @@
     "github": "",
     "bluesky": ""
   },
+  "tagline": "A learning journal on sustainability, energy security and fair energy transitions",
+  "university": "University of Saskatchewan",
+  "licence": "[[Choose a licence for your writing, e.g. CC BY 4.0]]",
+  "siteTitle": "Energy Security Learning Portfolio",
+  "photo": "/assets/uploads/passport.jpg",
   "comments": {
     "provider": "moderated",
     "giscus": {
@@ -25,10 +26,9 @@
       "categoryId": ""
     }
   },
-  "subscribe": {
-    "provider": "netlify",
-    "buttondownUsername": ""
-  },
-  "licence": "[[Choose a licence for your writing, e.g. CC BY 4.0]]",
-  "postsPerPage": 8
+  "photoAlt": "Professional photograph of Oladayo George",
+  "postsPerPage": 8,
+  "programme": "Master of Sustainability - Energy Security",
+  "contactEmail": "",
+  "ownerName": "Oladayo George"
 }
