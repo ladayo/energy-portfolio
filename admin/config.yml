@@ -3,12 +3,12 @@
 
 backend:
   name: github
-  repo: your-github-username/your-repo-name   # CHANGE ME — e.g. jane-doe/energy-portfolio
+  repo: ladayo/energy-portfolio  # CHANGE ME — e.g. jane-doe/energy-portfolio
   branch: main
   # Sign-in is handled by Netlify's GitHub OAuth provider (see the guide).
 
-site_url: https://your-site-name.netlify.app  # CHANGE ME — your live address
-display_url: https://your-site-name.netlify.app
+site_url: https://dayogeorge.netlify.app/#/ # CHANGE ME — your live address
+display_url: https://dayogeorge.netlify.app/#/
 logo_url: /assets/img/favicon.svg
 locale: en
 
