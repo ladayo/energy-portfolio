@@ -1,24 +1,21 @@
 {
-  "title": "Renewable energy, participation, ownership and energy justice",
+  "excerpt": "Canada’s Sustainable Development Goals become meaningful when national ambitions are translated into questions that residents can examine and act on together. As a newcomer to Canada, I reflected on the relationship between the community where I reside, Silverton in southwest Calgary, Alberta, and SDG 7 (Affordable and Clean Energy), SDG 11 (Sustainable Cities and Communities), and SDG 13 (Climate Action).",
+  "draft": false,
+  "body": "What if local climate action began not with a technology pitch, but with shared questions about affordability, access, data, place, and responsibility?\n\nIn ENVS 839, I explored how SDGs 7, 11, and 13 connect household energy, neighbourhood conditions, and climate resilience. National indicators, including energy savings, cleaner electricity, sustainable commuting, and emissions reduction, provide useful direction. Yet I found no verified Silverton-specific baseline, so responsible localization cannot mean presenting assumptions as local results.\n\nMy proposed response is a 12-week Silverton Community Energy Learning Lab with quarterly follow-ups. It would begin with a community agreement and shared rules, then use voluntary bill-reading, an energy and accessibility walk, workshops, household action pilots, resident stories, peer-facilitator development, a results forum, and community-controlled aggregate reporting. This is a learning design, not a program that has already been implemented.\n\nThe course readings challenged my engineering instinct to start with measures and solutions. Metrics remain necessary, but Two-Eyed Seeing, Ethical Space, the Four Rs, relational systems thinking, land and place, and responsibility for stories pushed me to ask who defines the problem, who controls knowledge and data, whose interpretation counts, and who benefits. As a non-Indigenous newcomer, I must engage these teachings with humility and avoid treating them as a generic management toolkit.\n\nFor professionals and community members, what evidence would convince you that a local energy initiative created meaningful influence, rather than simply good attendance?\n\nThank you, Elaina Guilmette, PhD, for guiding this learning.\n\n\\#SustainableDevelopmentGoals#EnergySecurity #CommunityEnergy #ClimateAction #EnergyEfficiency#SustainableCities #CommunityEngagement #JustTransition",
+  "featured": true,
   "date": "2026-10-12",
-  "type": "Key takeaways",
-  "course": "[[Course code and name]]",
-  "categories": [
-    "energy-justice",
-    "renewable-energy",
-    "community-energy-planning"
-  ],
+  "comments": [],
+  "title": "Localizing the SDGs Through Community Energy",
   "tags": [
     "community energy",
     "Indigenous-led energy",
-    "participation",
-    "ownership models",
-    "procedural justice"
+    "participation"
   ],
-  "excerpt": "A wind farm can be clean and still feel unfair. Notes on why participation and ownership shape whether renewable energy projects deliver justice — and not just electricity.",
-  "featured": true,
-  "draft": false,
-  "commentsOpen": true,
-  "body": "One idea from this week's readings has stuck with me: *a project can be renewable and still be unjust.* This post pulls together my notes on why participation and ownership matter so much.\n\n## Three ways of looking at energy justice\n\nThe readings this week used a framework with three tenets:\n\n- **Distributional justice** — how the benefits (jobs, revenue, cheaper power) and burdens (land use, noise, visual impact, cost) are shared.\n- **Procedural justice** — whether people affected by a decision have a fair and meaningful say in it.\n- **Recognition justice** — whether different groups, knowledges and rights are acknowledged and respected.\n\n[[Add citation — e.g. Jenkins et al. (2016)]]\n\n## Participation is not the same as consultation\n\nIt's easy to tick a box by holding an information session after the key decisions are already made. Real participation starts earlier and gives people genuine influence — over the site, the scale, the design and how benefits are shared. Arnstein's well-known \"ladder of participation\" was a useful reminder that informing people sits near the bottom of the ladder, not the top.\n\n## Ownership changes the conversation\n\nI found it helpful to compare ownership models:\n\n- **Utility-owned** — simpler to finance and coordinate, but benefits flow mainly through the utility.\n- **Private developer with a community benefit agreement** — local payments or funds, but limited local control.\n- **Co-operative or community-owned** — benefits and decisions stay local, but projects can be harder to finance.\n- **Indigenous-owned or equity partnerships** — Indigenous nations owning or co-owning projects, which can support self-determination, revenue and long-term capacity.\n\nThe pattern I noticed: the more ownership and decision-making sit with the community, the more likely the project is to be seen as fair — and the more likely it is to be accepted. Community energy has been described as being about both *process* (who it is by) and *outcome* (who it is for). [[Add citation — e.g. Walker & Devine-Wright (2008)]]\n\n## Questions I'm left with\n\n- How can smaller communities access the capital they need to own projects, not just host them?\n- What does meaningful participation look like when timelines are tight?\n- How should recognition of Indigenous rights and knowledge be built into planning from day one?\n\n## Key takeaways\n\n> - \"Clean\" and \"fair\" are separate tests. Good projects aim to pass both.\n> - Participation should shape decisions, not just inform people about them.\n> - Ownership is one of the strongest levers for distributing benefits and building trust.\n\n[[Add a local case study from your course here, with sources.]]\n",
-  "comments": []
+  "type": "Assignment",
+  "course": "ENVS 839 - Ways of Knowing Through the Concept of Sustainability-Energy",
+  "categories": [
+    "renewable-energy",
+    "community-energy-planning"
+  ],
+  "commentsOpen": true
 }
