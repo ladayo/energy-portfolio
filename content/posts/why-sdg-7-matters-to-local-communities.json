@@ -1,23 +1,23 @@
 {
-  "title": "The relevance of SDG 7 to local communities",
-  "date": "2026-10-05",
-  "type": "Reflection",
-  "course": "[[Course code and name]]",
-  "categories": [
-    "sdg-7",
-    "sustainable-development",
-    "community-energy-planning"
-  ],
+  "excerpt": "SDG 7 is often talked about as a global target for other places. Looking closer, its promise of affordable, reliable, sustainable and modern energy is surprisingly local.",
+  "draft": false,
+  "body": "Sustainable Development Goal 7 aims to *\"ensure access to affordable, reliable, sustainable, and modern energy for all.\"* When I first read it, I filed it mentally under international development—something about electrification in other parts of the world. This week's readings made me realise how local it is.\n\nAs part of my coursework, my team compared SDG 7 (Affordable & Clean Energy) progress across Norway, Brazil, and Namibia - countries with dramatically different Human Development Index rankings (2, 84, and 136).\n\nHere’s what surprised us:\n\n* Norway ranks #2 globally on HDI and runs almost entirely on clean hydropower, yet its economy still leans heavily on petroleum exports. High human development doesn't automatically mean a sustainable energy system.\n* Brazil is nearly 100% electrified with a huge renewable mix, but affordability and regional inequality remain major barriers. Energy access does not equal energy affordability.\n* Namibia has some of the world’s best solar potential, yet roughly half its population still lacks reliable electricity, largely because of costly rural grid infrastructure and cost-reflective tariffs.\n\nThe biggest driver of these differences wasn’t renewable potential, all three countries have plenty. It was GNI per capita and public policy choice. Economic capacity, more than education or life expectancy, determines whether a country can finance the infrastructure needed to turn energy potential into energy access.\n\n\n\n## Key takeaways\n\n> * SDG 7 is about everyone, everywhere — including communities in wealthy countries.\n> * Closing theSDG 7 gap isn’t just a technology problem - it’s a financing, governance, andpublic-policy problem.\n> * Local ownership and efficiency are two of the most direct ways to make progress.\n\n\n\nGrateful to Dr. Elaina Guilmette for pushing our cohort to dig past the headline numbers and interrogate the “why” behind the data. 🙏\n\n💬What’s one policy you think could accelerate clean energy access in resource-rich but infrastructure-poor regions? I’d love to hear your take below.\n\n*\\#SDG7 #AffordableAndCleanEnergy #EnergySecurity #Sustainability #CleanEnergy #EnergyPolicy #EnergyTransition #EnergyAccess #HumanDevelopment#GlobalDevelopment #MasterOfSustainability #EnergyForAll*",
+  "featured": false,
+  "date": "2026-09-26",
+  "comments": [],
+  "title": "SDG 7: 🌍⚡ Three countries, three very different energy stories - and a lesson in what “development” really means.",
   "tags": [
     "energy access",
     "energy poverty",
     "remote communities",
     "efficiency"
   ],
-  "excerpt": "SDG 7 is often talked about as a global target for other places. Looking closer, its promise of affordable, reliable, sustainable and modern energy is surprisingly local.",
-  "featured": false,
-  "draft": false,
-  "commentsOpen": true,
-  "body": "Sustainable Development Goal 7 aims to *\"ensure access to affordable, reliable, sustainable and modern energy for all.\"* When I first read it, I filed it mentally under international development — something about electrification in other parts of the world. This week's readings made me realise how local it is.\n\n## The targets, in plain language\n\n- **7.1** — Everyone has access to affordable, reliable, modern energy services.\n- **7.2** — A much larger share of energy comes from renewable sources.\n- **7.3** — The rate of improvement in energy efficiency doubles.\n- **7.a and 7.b** — Countries cooperate on research, investment and infrastructure, especially to support developing countries.\n\n## Why it matters close to home\n\nEven in wealthy countries, the four words *affordable, reliable, sustainable, modern* don't apply equally to everyone:\n\n- **Affordable** — some households spend a large share of their income on heating and power. Energy poverty is real in cold climates.\n- **Reliable** — rural and remote communities can face more frequent outages and longer restoration times.\n- **Sustainable** — many remote communities in Canada are not connected to the main grid and still rely on diesel generators.\n- **Modern** — older, poorly insulated homes lock people into high bills and discomfort.\n\nSeen this way, SDG 7 isn't something that's \"done\" once a country has an electricity grid. It's a lens for asking who is still being left behind.\n\n## What local action can look like\n\n- Home energy retrofits targeted at households with the highest energy burden.\n- Community-owned solar or wind projects that keep benefits local.\n- Microgrids and storage to reduce diesel dependence in remote communities.\n- Energy literacy programmes, so people can make informed choices.\n- Local energy plans that connect housing, transport and economic development.\n\n[[If relevant, add an example from your own community or home country here — local examples make this post much stronger.]]\n\n## Key takeaways\n\n> - SDG 7 is about everyone, everywhere — including communities in wealthy countries.\n> - The four qualities in the goal give a practical checklist for local energy planning.\n> - Local ownership and efficiency are two of the most direct ways to make progress.\n\n*Sources to add: UN SDG 7 targets and indicators [[add link]]; Tracking SDG 7 report [[add year]].*\n",
-  "comments": []
+  "type": "Lesson",
+  "course": "ENVS 839 - Ways of Knowing Through the Concept of Sustainability-Energy",
+  "categories": [
+    "sdg-7",
+    "sustainable-development",
+    "community-energy-planning"
+  ],
+  "commentsOpen": true
 }
