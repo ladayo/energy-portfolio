@@ -290,7 +290,7 @@
 
   function subscribeForm(prefix, compact) {
     var s = settings().subscribe || {};
-    var intro = '<p class="subscribe-copy">Get new posts by email — roughly ' + ph('[[once or twice a month]]') + '. No spam, unsubscribe any time.</p>';
+    var intro = '<p class="subscribe-copy">Get new posts by email. No spam, unsubscribe any time.</p>';
     var consent = 'I agree to receive email updates and have read the <a href="#/privacy">privacy notice</a>.';
     if (s.provider === 'buttondown' && hasText(s.buttondownUsername) && !PREVIEW) {
       return intro + '<form class="form subscribe-form' + (compact ? ' compact' : '') + '" action="https://buttondown.com/api/emails/embed-subscribe/' + esc(encodeURIComponent(s.buttondownUsername)) + '" method="post" target="_blank">' +
@@ -311,7 +311,6 @@
     { href: '#/', label: 'Home', key: '' },
     { href: '#/about', label: 'About me', key: 'about' },
     { href: '#/journal', label: 'Learning journal', key: 'journal', also: ['post', 'tags'] },
-    { href: '#/research', label: 'Research & projects', key: 'research', also: ['project'] },
     { href: '#/topics', label: 'Topics', key: 'topics' },
     { href: '#/resources', label: 'Resources', key: 'resources' },
     { href: '#/contact', label: 'Contact', key: 'contact' }
@@ -430,8 +429,8 @@
         return '<li><strong>' + ph(e.title) + '</strong><span>' + ph(e.place) + '</span><span class="muted">' + ph(e.years) + '</span></li>';
       }).join('') + '</ul></div>' +
       '<div class="aside-card"><h2 class="aside-h">Areas of interest</h2><ul class="topic-chips plain">' + (a.interests || []).map(function (i) { return '<li><span class="topic-chip static">' + ph(i) + '</span></li>'; }).join('') + '</ul></div>' +
-      '<div class="aside-card"><h2 class="aside-h">Connect</h2>' + (socialLinks() || '<p class="muted">' + ph('[[Add your LinkedIn or other professional profiles in Settings → Social links]]') + '</p>') +
-      (hasText(a.cvLink) ? '<p>' + extLink(a.cvLink, icon('file') + ' Download my CV', 'btn btn-ghost') + '</p>' : '<p class="muted">' + ph('[[Optional: upload a CV and add the link in About → CV link]]') + '</p>') +
+      '<div class="aside-card"><h2 class="aside-h">Connect</h2>' + socialLinks() +
+      (hasText(a.cvLink) ? '<p>' + extLink(a.cvLink, icon('file') + ' Download my CV', 'btn btn-ghost') + '</p>' : '') +
       '<p><a class="btn btn-primary" href="#/contact">Get in touch</a></p></div>' +
       '</aside></div>';
     return { title: 'About me', html: html };
@@ -727,12 +726,12 @@
         field({ id: 'ct-email', name: 'email', label: 'Email address', type: 'email', required: true, autocomplete: 'email' }) +
         '</div>' +
         field({ id: 'ct-aff', name: 'affiliation', label: 'Organisation or institution', autocomplete: 'organization', max: 120 }) +
-        field({ id: 'ct-subject', name: 'subject', label: 'What is this about?', short: 'Topic of your message', type: 'select', required: true, options: ['Academic collaboration', 'Question about a post', 'Research or project enquiry', 'Speaking or event invitation', 'Feedback on the website', 'Something else'] }) +
+        field({ id: 'ct-subject', name: 'subject', label: 'What is this about?', short: 'Topic of your message', type: 'select', required: true, options: ['Academic collaboration', 'Question about a post', 'Research enquiry', 'Speaking or event invitation', 'Feedback on the website', 'Something else'] }) +
         field({ id: 'ct-msg', name: 'message', label: 'Message', type: 'textarea', required: true, min: 20, max: 3000, rows: 7, counter: true }) +
         field({ id: 'ct-consent', name: 'consent', label: 'I agree that my details will be used to reply to this message, as described in the <a href="#/privacy">privacy notice</a>.', short: 'Consent', type: 'checkbox', required: true }) +
         '<button class="btn btn-primary" type="submit">Send message</button>') +
       '</div><aside class="contact-aside" aria-label="Other ways to connect">' +
-      '<div class="aside-card"><h2 class="aside-h">Professional profiles</h2>' + (social || '<p class="muted">' + ph('[[Add your LinkedIn, ORCID or other profile links in Settings → Social links. They will appear here automatically.]]') + '</p>') + '</div>' +
+      (social ? '<div class="aside-card"><h2 class="aside-h">Professional profiles</h2>' + social + '</div>' : '') +
       '<div class="aside-card"><h2 class="aside-h">What to expect</h2><p>I usually reply within ' + ph('[[number]]') + ' working days. During exam periods it may take a little longer.</p></div>' +
       '<div class="aside-card"><h2 class="aside-h">Based at</h2><p>' + esc(s.programme || '') + '<br>' + esc(s.university || '') + '</p></div>' +
       '</aside></div>';
@@ -775,7 +774,7 @@
   function viewSearch(q) {
     var term = q.q || '';
     var r = searchAll(term);
-    var html = pageHeader('Search', 'Search', 'Search across journal posts, research and projects, and resources.') +
+    var html = pageHeader('Search', 'Search', 'Search across journal posts and resources.') +
       '<div class="container narrow-wide">' +
       '<form class="search-form big" role="search" data-form="search" aria-label="Search this site"><label for="sp-q" class="sr-only">Search terms</label>' +
       '<input id="sp-q" name="q" type="search" value="' + esc(term) + '" placeholder="Try “energy justice” or “SDG 7”" autocomplete="off">' +
@@ -858,8 +857,7 @@
       case 'about': view = viewAbout(); break;
       case 'journal': view = viewJournal(q); break;
       case 'post': view = viewPost(p[1]); break;
-      case 'research': view = viewResearch(q); break;
-      case 'project': view = viewProject(p[1]); break;
+      // Research & projects section removed
       case 'topics': view = p[1] ? viewTopic(p[1]) : viewTopics(); break;
       case 'tags': view = viewTag(p[1]); break;
       case 'resources': view = viewResources(q); break;
@@ -1259,6 +1257,7 @@
 
   function start(data) {
     D = data;
+    D.projects = []; // Research & projects section removed
     document.getElementById('site-header').innerHTML = headerHtml();
     document.getElementById('site-footer').innerHTML = footerHtml();
     applyPrefs();
