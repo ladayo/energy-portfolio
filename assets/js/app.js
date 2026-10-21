@@ -732,8 +732,6 @@
         '<button class="btn btn-primary" type="submit">Send message</button>') +
       '</div><aside class="contact-aside" aria-label="Other ways to connect">' +
       (social ? '<div class="aside-card"><h2 class="aside-h">Professional profiles</h2>' + social + '</div>' : '') +
-      '<div class="aside-card"><h2 class="aside-h">What to expect</h2><p>I usually reply within ' + ph('[[number]]') + ' working days. During exam periods it may take a little longer.</p></div>' +
-      '<div class="aside-card"><h2 class="aside-h">Based at</h2><p>' + esc(s.programme || '') + '<br>' + esc(s.university || '') + '</p></div>' +
       '</aside></div>';
     return { title: 'Contact', html: html };
   }
